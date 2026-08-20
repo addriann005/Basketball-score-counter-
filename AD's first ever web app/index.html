@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <link rel="Stylesheet" herf="index.css">
+        <style>
+            body {
+    background-image: url("bb.jpg");
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.container {
+    background: white;
+    max-width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+h1{ 
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+h2{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom:20px;
+
+}
+
+button{
+    border: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    font-weight: bold;
+    width: 200px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+ #increment-btn{
+    background: red;
+ }
+
+ #save-btn{
+    background: darkgreen;
+ }
+        </style>
+    </head>
+    <body> 
+        <div class="container">
+            <h1>Baskets Scored:</h1>
+            <h2 id="count-el">0</h2>
+            <button id="increment-btn" onclick="increment()">KEEP GOING</button>
+            <button id="save-btn" onclick="save()">RETRY</button>
+            <p id="save-el">No. of shots(tries): </p>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
